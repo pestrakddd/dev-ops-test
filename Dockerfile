@@ -1,3 +1,3 @@
-FROM adoptopenjdk:8-jdk-hotspot@1.8.0_382
+FROM adoptopenjdk:8-jdk-hotspot
 COPY target/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
